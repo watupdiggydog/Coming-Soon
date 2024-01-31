@@ -502,3 +502,15 @@ a {
 .bg-5 {
     background-image: url('../images/background/bg-5.jpg');
 }
+
+.mass-head-bg-2 {
+    background-image: url('../images/others/mass-head-bg-2.svg');
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .mass-head-bg-2 {
+        background-image: url('../images/others/mass-head-bg-2.svg');
+        /* Additional styles for smaller screens */
+    }
+}
