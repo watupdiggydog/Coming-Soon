@@ -553,7 +553,7 @@ a:focus {
 }
 
 .mass-head-bg-2 {
-  background-image: url("../images/others/mass-head-bg-2.jpg");
+  background-image: url("../images/others/mass-head-bg-2.gif");
 }
 
 .mass-head-bg-3 {
@@ -1577,3 +1577,7 @@ a:focus {
 
 /* 04 footer start */
 /*# sourceMappingURL=style.css.map */
+#emailedit {
+
+  color: blue;
+}
