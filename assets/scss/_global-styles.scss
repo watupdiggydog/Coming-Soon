@@ -478,7 +478,7 @@ a {
     background-image: url('../images/others/mass-head-bg-1.jpg');
 }
 .mass-head-bg-2 {
-    background-image: url('../images/others/mass-head-bg-2.svg');
+    background-image: url('../images/others/mass-head-bg-2.jpg');
 }
 .mass-head-bg-3 {
     background-image: url('../images/others/mass-head-bg-3.jpg');
@@ -488,7 +488,7 @@ a {
 }
 
 .bg-2 {
-    background-image: url('../images/background/bg-2.svg');
+    background-image: url('../images/background/bg-2.jpg');
 }
 
 .bg-3 {
@@ -504,13 +504,13 @@ a {
 }
 
 .mass-head-bg-2 {
-    background-image: url('../images/others/mass-head-bg-2.svg');
+    background-image: url('../images/others/mass-head-bg-2.jpg');
     background-size: cover;
 }
 
 @media (max-width: 768px) {
     .mass-head-bg-2 {
-        background-image: url('../images/others/mass-head-bg-2.svg');
+        background-image: url('../images/others/mass-head-bg-2.jpg');
         /* Additional styles for smaller screens */
     }
 }
