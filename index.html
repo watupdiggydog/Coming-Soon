@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -27,237 +28,239 @@
 
 
     <style>
-/* Remove conflicting styles for .gallery-container */
-@media (max-width: 760px) {
-    .gallery-container {
-        overflow-x: hidden; /* Ensure no horizontal scrolling on small screens */
-    }
-}
+        /* Remove conflicting styles for .gallery-container */
+        @media (max-width: 760px) {
+            .gallery-container {
+                overflow-x: hidden;
+                /* Ensure no horizontal scrolling on small screens */
+            }
+        }
 
-.gallery-container {
-    white-space: nowrap; /* Ensure images stay in a single line */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0; /* Ensure no left padding */
-    width: 100%; /* Take up full width of its container */
-    overflow-x: hidden; /* Allow horizontal scrolling if needed */
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
-}
+        .gallery-container {
+            white-space: nowrap;
+            /* Ensure images stay in a single line */
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 0;
+            /* Ensure no left padding */
+            width: 100%;
+            /* Take up full width of its container */
+            overflow-x: hidden;
+            /* Allow horizontal scrolling if needed */
+            overflow-y: hidden;
+            /* Hide vertical scrollbar */
+            scrollbar-width: none;
+            /* Hide scrollbar for Firefox */
+            -ms-overflow-style: none;
+            /* Hide scrollbar for IE and Edge */
+        }
 
-.image-item {
-    display: inline-block;
-    margin-right: 15px;
-    width: calc(30% - 15px); /* Adjust width to 25% of the container minus margin */
-    height: auto; /* Ensure images maintain aspect ratio */
-}
+        .image-item {
+            display: inline-block;
+            margin-right: 15px;
+            width: calc(30% - 15px);
+            /* Adjust width to 25% of the container minus margin */
+            height: auto;
+            /* Ensure images maintain aspect ratio */
+        }
 
-.image-item img {
-    width: 100%;
-    height: auto;
-}
-
-
-
-
-
+        .image-item img {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
+
 <body>
 
-<!-- Header -->
-<div class="header navbar-fixed-top">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="index.html"></a>
+    <!-- Header -->
+    <div class="header navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="index.html"></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <div class="top-right-contact text-right pull-right hidden-sm hidden-xs"></div>
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#Home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#booking">Services</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <div class="top-right-contact text-right pull-right hidden-sm hidden-xs"></div>
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#Home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#booking">Services</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<section class="section__container about__container" id="Home"></section>
-<picture>
-    <!-- For mobile devices -->
-    <source media="(max-width: 760px)" srcset="assets/images/background/mobile-head.avif">
-    <!-- For other devices -->
-    <img src="assets/images/background/ddh.webp" width="100%" alt="" style="display: block; border: 0;">
+    <section class="section__container about__container" id="Home"></section>
+    <picture>
+        <!-- For mobile devices -->
+        <source media="(max-width: 760px)" srcset="assets/images/background/mobile-head.avif">
+        <!-- For other devices -->
+        <img src="assets/images/background/ddh.webp" width="100%" alt="" style="display: block; border: 0;">
 
-  </picture>
+    </picture>
 
-  <section class="section__container about__container" id="about">
-  <!-- about area start -->
-  <div class="about-area bg-color-1 pad120">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="section-title text-center">
-                    <img src="assets/images/title-img/title-img-2.png" class="title-img mb15" alt="">
-                    <h3 class="title"><strong>About Diggy Dogs Wash</strong></h3>
-                    <p class="sub-title"></p>
-                </div>
-            </div> <!-- /.col -->
-        </div> <!-- /.row -->
-    </div> <!--/.container-->
-  <div class="container data-aos="fade-right" data-aos-delay="150"">
-    <div class="row">
-        <div class="col-md-6">
-            <img class="img-responsive xs-mb30" src="assets/images/About/zoe & Dog.jpg" alt="">
-        </div> <!-- /.col -->
-        <div class="col-md-6">
-          <h2><strong>Zoe Rae</strong></h2>
-          <br>
-          <h3>Manager</h3>
-          <br>
-            <p>My name is Zoe-Rae, I am a mother of 3 human babies and 3 Fur-babies. My passion for animals started at a very young age. From the moment I could walk and saw a dog followed It home. I spent all my free time with animals. Going on Adventures with my dog Axel and horse riding every chance I got. As soon as I was old enough I began doing volunteer work at the RSPCA and AWQL. My top priority is making sure Your Doggo is happy and safe.</p>
-            <ul class="fa-ul">
-
-            </ul>
-        </div> <!-- /.col -->
-    </div> <!-- /.row -->
-</div> <!--/.container-->
-</div>
-<!-- service area end -->
-
-
-<!-- hair-style area start -->
-<div class="about-area bg-color-2 pad120">
-        <div class="section-title-left" style="text-align: center;">
-            <img src="assets/images/title-img/title-img-4.png" class="title-img mb15" alt="">
-            <h3 class="title"><strong>Elevate Your Pup's Style</strong></h3>
-            <p>Our service ensures a stress-free grooming experience for your furry friend right at your doorstep. Check out our gallery for a glimpse of the pampering awaiting your pet!</p>
-        </div>
-
-        <div class="about-area bg-color-2 pad170">
-            <br>
-            <br>
-            <br>
-                    <div class="col-xs-16">
+    <section class="section__container about__container" id="about">
+        <!-- about area start -->
+        <div class="about-area bg-color-1 pad120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
                         <div class="section-title text-center">
-        <div class="gallery-container">
-            <div class="image-item"><img src="assets/images/hair-style/hair-style-1.jpg" alt="Image 1"></div>
-            <div class="image-item"><img src="assets/images/hair-style/hair-style-2.jpg" alt="Image 2"></div>
-            <div class="image-item"><img src="assets/images/hair-style/hair-style-3.jpg" alt="Image 3"></div>
-            <div class="image-item"><img src="assets/images/hair-style/hair-style-4.jpg" alt="Image 4"></div>
-            <div class="image-item"><img src="assets/images/hair-style/hair-style-5.jpg" alt="Image 5"></div>
-            <div class="image-item"><img src="assets/images/hair-style/hair-style-6.jpg" alt="Image 6"></div>
-            <div class="image-item"><img src="assets/images/hair-style/hair-style-7.jpg" alt="Image 7"></div>
-            <div class="image-item"><img src="assets/images/hair-style/hair-style-8.jpg" alt="Image 8"></div>
+                            <img src="assets/images/title-img/title-img-2.png" class="title-img mb15" alt="">
+                            <h3 class="title"><strong>About Diggy Dogs Wash</strong></h3>
+                            <p class="sub-title"></p>
+                        </div>
+                    </div> <!-- /.col -->
+                </div> <!-- /.row -->
+            </div>
+            <!--/.container-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive xs-mb30" src="assets/images/About/zoe & Dog.jpg" alt="">
+                    </div> <!-- /.col -->
+                    <div class="col-md-6">
+                        <h2><strong>Zoe Rae</strong></h2>
+                        <br>
+                        <h3>Manager</h3>
+                        <br>
+                        <p>My name is Zoe-Rae, I am a mother of 3 human babies and 3 Fur-babies. My passion for animals started at a very young age. From the moment I could walk and saw a dog followed It home. I spent all my free time with animals. Going on Adventures with my dog Axel and horse riding every chance I got. As soon as I was old enough I began doing volunteer work at the RSPCA and AWQL. My top priority is making sure Your Doggo is happy and safe.</p>
+                        <ul class="fa-ul">
+
+                        </ul>
+                    </div> <!-- /.col -->
+                </div> <!-- /.row -->
+            </div>
+            <!--/.container-->
+        </div>
+        <!-- service area end -->
+
+
+        <!-- hair-style area start -->
+        <div class="about-area bg-color-2 pad120">
+            <div class="section-title-left" style="text-align: center;">
+                <img src="assets/images/title-img/title-img-4.png" class="title-img mb15" alt="">
+                <h3 class="title"><strong>Elevate Your Pup's Style</strong></h3>
+                <p>Our service ensures a stress-free grooming experience for your furry friend right at your doorstep. Check out our gallery for a glimpse of the pampering awaiting your pet!</p>
+            </div>
+
+            <div class="about-area bg-color-2 pad170">
+                <br>
+                <br>
+                <br>
+                <div class="col-xs-16">
+                    <div class="section-title text-center">
+                        <div class="gallery-container">
+                            <div class="image-item"><img src="assets/images/hair-style/hair-style-1.jpg" alt="Image 1"></div>
+                            <div class="image-item"><img src="assets/images/hair-style/hair-style-2.jpg" alt="Image 2"></div>
+                            <div class="image-item"><img src="assets/images/hair-style/hair-style-3.jpg" alt="Image 3"></div>
+                            <div class="image-item"><img src="assets/images/hair-style/hair-style-4.jpg" alt="Image 4"></div>
+                            <div class="image-item"><img src="assets/images/hair-style/hair-style-5.jpg" alt="Image 5"></div>
+                            <div class="image-item"><img src="assets/images/hair-style/hair-style-6.jpg" alt="Image 6"></div>
+                            <div class="image-item"><img src="assets/images/hair-style/hair-style-7.jpg" alt="Image 7"></div>
+                            <div class="image-item"><img src="assets/images/hair-style/hair-style-8.jpg" alt="Image 8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-<!-- hair-style area end -->
-<section class="section__container contact__container" id="booking"></section>
-<!-- pricing area start -->
-<div class="counter-area bg-color-1 pad50">
-    <br>
-    <br>
-    <br>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="section-title text-center">
-                <img src="assets/images/title-img/title-img-3.png" class="title-img mb15" alt="">
-                <h3 class="title"><strong>Services</strong></h3>
-                <p class="sub-title">Customer satisfaction is our top priority</p>
+    <!-- hair-style area end -->
+    <section class="section__container contact__container" id="booking"></section>
+    <!-- pricing area start -->
+    <div class="counter-area bg-color-1 pad50">
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-title text-center">
+                        <img src="assets/images/title-img/title-img-3.png" class="title-img mb15" alt="">
+                        <h3 class="title"><strong>Services</strong></h3>
+                        <p class="sub-title">Customer satisfaction is our top priority</p>
+                    </div>
+                </div> <!-- /.col -->
+            </div> <!-- /.row -->
+        </div>
+        <!--/.container-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="pricing-box text-center xs-mb30">
+                        <div class="price-title">
+
+                        </div>
+                        <div class="price-tag">
+                            <h2><span>Bath and towel dry</span></h2>
+                        </div>
+                        <div class="price-description">
+                            <p>Hydro-bath in a shampoo product suited to your dogs skin and coat type, followed by Conditioner. Then the pup will be thoroughly towel dried.</p><br><br><br>
+                        </div>
+                        <a href="booking.html" class="btn btn-primary hvr-out">Book now</a>
+                    </div>
+                    <!--/.price-box-->
+                </div> <!-- /.col -->
+                <div class="col-md-4 col-sm-4">
+                    <div class="pricing-box text-center xs-mb30">
+                        <div class="price-title">
+
+                        </div>
+                        <div class="price-tag">
+                            <h2><span></span>Bath and blow dry</h2>
+                        </div>
+                        <div class="price-description">
+                            <p>Hydro-bath in a shampoo product suited to your dogs skin and coat type, followed by Conditioner. Your pup will be fully dried using the dryer. A bath and blow dry can not be done if the dog is matted.</p><br><br>
+                        </div>
+                        <a href="booking.html" class="btn btn-primary hvr-out">Book now</a>
+                    </div>
+                    <!--/.price-box-->
+                </div> <!-- /.col -->
+                <div class="col-md-4 col-sm-4">
+                    <div class="pricing-box text-center xs-mb30">
+                        <div class="price-title">
+
+                        </div>
+                        <div class="price-tag">
+                            <h2><span></span>Bath and tidy</h2>
+                        </div>
+                        <div class="price-description">
+                            <p>Hydro-bath in a shampoo product suited to you dogs skin and coat type, followed by Conditioner. Your pup will then be fully dried using the dryer. Your fur baby will then have hair around the eyes trimmed. Paw pads shaved and sanitary areas shaved. A tidy can not be done if dog is matted.</p>
+                        </div>
+                        <button type="button" class="btn btn-primary hvr-out" onclick="location.href='booking.html';">Book now</button>
+                    </div>
+                    <!--/.price-box-->
+                </div> <!-- /.col -->
+            </div> <!-- /.row -->
+        </div>
+        <!--/.container-->
+
+
+        <div class="counter-area bg-color-1 pad110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section-title text-center">
+
+                        </div>
+                    </div> <!-- /.col -->
+                </div> <!-- /.row -->
             </div>
-        </div> <!-- /.col -->
-    </div> <!-- /.row -->
-</div> <!--/.container-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-sm-4">
-            <div class="pricing-box text-center xs-mb30">
-                <div class="price-title">
-
-                </div>
-                <div class="price-tag">
-                    <h2><span>Bath and towel dry</span></h2>
-                </div>
-                <div class="price-description">
-                    <p>Hydro-bath in a shampoo product suited to your dogs skin and coat type, followed by Conditioner. Then the pup will be thoroughly towel dried.</p><br><br><br>
-                </div>
-                <a href="booking.html" class="btn btn-primary hvr-out">Book now</a>
-            </div> <!--/.price-box-->
-        </div> <!-- /.col -->
-        <div class="col-md-4 col-sm-4">
-            <div class="pricing-box text-center xs-mb30">
-                <div class="price-title">
-
-                </div>
-                <div class="price-tag">
-                    <h2><span></span>Bath and blow dry</h2>
-                </div>
-                <div class="price-description">
-                    <p>Hydro-bath in a shampoo product suited to your dogs skin and coat type, followed by Conditioner. Your pup will be fully dried using the dryer. A bath and blow dry can not be done if the dog is matted.</p><br><br>
-                </div>
-                <a href="booking.html" class="btn btn-primary hvr-out">Book now</a>
-            </div> <!--/.price-box-->
-        </div> <!-- /.col -->
-        <div class="col-md-4 col-sm-4">
-            <div class="pricing-box text-center xs-mb30">
-                <div class="price-title">
-
-                </div>
-                <div class="price-tag">
-                    <h2><span></span>Bath and tidy</h2>
-                </div>
-                <div class="price-description">
-                    <p>Hydro-bath in a shampoo product suited to you dogs skin and coat type, followed by Conditioner. Your pup will then be fully dried using the dryer. Your fur baby will then have hair around the eyes trimmed. Paw pads shaved and sanitary areas shaved. A tidy can not be done if dog is matted.</p>
-                </div>
-                <button type="button" class="btn btn-primary hvr-out" onclick="location.href='booking.html';">Book now</button>
-            </div> <!--/.price-box-->
-        </div> <!-- /.col -->
-    </div> <!-- /.row -->
-</div> <!--/.container-->
-
-
-<div class="counter-area bg-color-1 pad110">
-<div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="section-title text-center">
-
-                </div>
-            </div> <!-- /.col -->
-        </div> <!-- /.row -->
-    </div> <!--/.container-->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-4">
-                <div class="pricing-box text-center xs-mb30">
-                    <div class="price-title">
-
-                    </div>
-                    <div class="price-tag">
-                        <h2><span>Puppy Groom</span></h2>
-                    </div>
-                    <div class="price-description">
-                        <p>Hydro-bath in a shampoo product suited to you dogs skin and coat type, followed by Conditioner. Your pup will then be fully dried using the dryer. Then pup will have a full body clip with either fluffy face and tail or short all over.</p><br>
-                    </div>
-                    <a href="booking.html" class="btn btn-primary hvr-out">Book now</a>
-                </div> <!--/.price-box-->
-            </div> <!-- /.col -->
+            <!--/.container-->
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
@@ -266,244 +269,264 @@
 
                             </div>
                             <div class="price-tag">
-                                <h2><span>Full Groom </span></h2>
+                                <h2><span>Puppy Groom</span></h2>
                             </div>
                             <div class="price-description">
                                 <p>Hydro-bath in a shampoo product suited to you dogs skin and coat type, followed by Conditioner. Your pup will then be fully dried using the dryer. Then pup will have a full body clip with either fluffy face and tail or short all over.</p><br>
                             </div>
                             <a href="booking.html" class="btn btn-primary hvr-out">Book now</a>
-                        </div> <!--/.price-box-->
+                        </div>
+                        <!--/.price-box-->
                     </div> <!-- /.col -->
-            <div class="col-md-4 col-sm-4">
-                <div class="pricing-box text-center xs-mb30">
-                    <div class="price-title">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="pricing-box text-center xs-mb30">
+                                    <div class="price-title">
 
-                    </div>
-                    <div class="price-tag">
-                        <h2><span></span>Deshed</h2>
-                    </div>
-                    <div class="price-description">
-                        <p>Hydro-bath in our deshedding shampoo, followed by Conditioner. Your pup will then be fully dried using the dryer which helps release the undercoat. Pup will also receive a good brush out to remove any knots and help remove more undercoat.</p><br>
-                    </div>
-                    <a href="booking.html" class="btn btn-primary hvr-out">Book now</a>
-                </div> <!--/.price-box-->
-            </div> <!-- /.col -->
+                                    </div>
+                                    <div class="price-tag">
+                                        <h2><span>Full Groom </span></h2>
+                                    </div>
+                                    <div class="price-description">
+                                        <p>Hydro-bath in a shampoo product suited to you dogs skin and coat type, followed by Conditioner. Your pup will then be fully dried using the dryer. Then pup will have a full body clip with either fluffy face and tail or short all over.</p><br>
+                                    </div>
+                                    <a href="booking.html" class="btn btn-primary hvr-out">Book now</a>
+                                </div>
+                                <!--/.price-box-->
+                            </div> <!-- /.col -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="pricing-box text-center xs-mb30">
+                                    <div class="price-title">
+
+                                    </div>
+                                    <div class="price-tag">
+                                        <h2><span></span>Deshed</h2>
+                                    </div>
+                                    <div class="price-description">
+                                        <p>Hydro-bath in our deshedding shampoo, followed by Conditioner. Your pup will then be fully dried using the dryer which helps release the undercoat. Pup will also receive a good brush out to remove any knots and help remove more undercoat.</p><br>
+                                    </div>
+                                    <a href="booking.html" class="btn btn-primary hvr-out">Book now</a>
+                                </div>
+                                <!--/.price-box-->
+                            </div> <!-- /.col -->
 
 
 
-            </div> <!-- /.col -->
-        </div> <!-- /.row -->
-        <br>
-        <br>
-        <br>
-    </div> <!--/.container-->
-</div>
+                        </div> <!-- /.col -->
+                    </div> <!-- /.row -->
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <!--/.container-->
+            </div>
 
 
-<!-- pricing area end -->
+            <!-- pricing area end -->
 
 
 
 
- <!-- Contact Form Area -->
- <section class="section__container contact__container" id="contact"></section>
- <div class="contact-form-area pad60 bg-color-2">
-    <br>
-    <br>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="section-title text-center">
-                    <img src="assets/images/title-img/title-img-1.png" class="title-img mb15" alt="">
-                    <h3 class="title"><strong>Contact Us</strong></h3>
-                <br><br><br>
-                <form class="contact-form"action="https://submit-form.com/Ft9LqbMjx" method="POST">
-                    <input
-                    type="hidden"
-                    name="_redirect"
-                    value="https://www.watupdiggydog.com.au/thankyou-2"
-                  />
+            <!-- Contact Form Area -->
+            <section class="section__container contact__container" id="contact"></section>
+            <div class="contact-form-area pad60 bg-color-2">
+                <br>
+                <br>
+                <br>
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="book-name" name="name" placeholder="Name" required>
-                                <div class="help-block with-errors"></div>
+                        <div class="col-xs-12">
+                            <div class="section-title text-center">
+                                <img src="assets/images/title-img/title-img-1.png" class="title-img mb15" alt="">
+                                <h3 class="title"><strong>Contact Us</strong></h3>
+                                <br><br><br>
+                                <form class="contact-form" action="https://submit-form.com/Ft9LqbMjx" method="POST">
+                                    <input type="hidden" name="_redirect" value="https://www.watupdiggydog.com.au/thankyou-2" />
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="book-name" name="name" placeholder="Name" required>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="book-phone" name="phone" placeholder="Phone" required>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="book-email" name="email" placeholder="Email" required>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="message">Message</label>
+                                                <textarea id="message" class="form-control" rows="6" name="message" required data-error="Enter your message"></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary hvr-in" id="book-submit">Send</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="book-phone" name="phone" placeholder="Phone" required>
-                                <div class="help-block with-errors"></div>
+                </div>
+                <!-- End Contact Form Area -->
+
+
+
+
+
+
+
+
+
+                <!-- Footer -->
+                <div class="footer bg-color-1 pad80 text-center">
+                    <div class="container">
+                        <div class="row mb30">
+                            <div class="col-md-12">
+                                <div class="footer-logo">
+                                    <img src="assets/images/others/ddl.svg" alt="" class="img-center img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb30">
+                            <div class="col-md-5 col-sm-5">
+                                <div class="footer-contact text-right">
+                                    <h4 style="color: white; font-family: sans-serif;">Call us at: <a href="tel:0473 857 657" style="color: grey; font-family: sans-serif;">0473 857 657</a></h4>
+                                    <br>
+                                    <h4 style="color: white; font-family: sans-serif;">Email us at: <a href="mailto:watupdiggydog@gmail.com" style="color: grey; font-family: sans-serif;">watupdiggydog@gmail.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2">
+                                <div class="footer-icon">
+                                    <div class="rotate-45deg"><i class="flaticon-scissors-opened-tool"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-5">
+                                <div class="footer-contact text-left">
+                                    <p>For all your precious pup's pampering needs.</p>
+                                    <br>
+                                    <ul>
+                                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                                        <li class="active"><a href="termsofservice.html">Terms of Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/Watupdiggydogs" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://www.instagram.com/watupdiggydogs/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="book-email" name="email" placeholder="Email" required>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" class="form-control" rows="6" name="message" required data-error="Enter your message"></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary hvr-in" id="book-submit">Send</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                </div>
+                <!-- End Footer -->
+
+                <!-- Back to Top Button -->
+                <div id="back-to-top"><i class="fa fa-angle-up"></i></div>
+                <!-- End Back to Top Button -->
+
+                <script>
+                    // Auto-scrolling function
+                    function autoScroll() {
+                        var container = document.querySelector('.gallery-container');
+                        var scrollWidth = container.scrollWidth;
+                        var clientWidth = container.clientWidth;
+
+                        if (scrollWidth > clientWidth) {
+                            var scrollPos = 0; // Initialize scroll position
+
+                            // Scroll function
+                            function scroll() {
+                                // Increment scroll position
+                                scrollPos++;
+
+                                // Check if scroll position reaches the end
+                                if (scrollPos >= scrollWidth - clientWidth) {
+                                    // Reset scroll position to the beginning
+                                    scrollPos = 0;
+                                }
+
+                                // Set scroll position
+                                container.scrollLeft = scrollPos;
+
+                                // Call scroll function recursively
+                                requestAnimationFrame(scroll);
+                            }
+
+                            // Start scrolling
+                            scroll();
+                        }
+                    }
+
+                    // Call autoScroll function when the document is ready
+                    document.addEventListener('DOMContentLoaded', function() {
+                        autoScroll();
+                    });
+                </script>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script>
+                    // Smooth scrolling for anchor links
+                    $(document).ready(function() {
+                        // Add smooth scrolling to all links
+                        $("a").on('click', function(event) {
+                            // Make sure this.hash has a value before overriding default behavior
+                            if (this.hash !== "") {
+                                // Prevent default anchor click behavior
+                                event.preventDefault();
+
+                                // Store hash
+                                var hash = this.hash;
+
+                                // Using jQuery's animate() method to add smooth page scroll
+                                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                                $('html, body').animate({
+                                    scrollTop: $(hash).offset().top
+                                }, 800, function() {
+                                    // Add hash (#) to URL when done scrolling (default click behavior)
+                                    window.location.hash = hash;
+                                });
+                            } // End if
+                        });
+                    });
+                </script>
+                <!-- JavaScript -->
+                <script src="assets/js/vendor/jquery-3.1.1.min.js"></script> <!-- jQuery -->
+                <script src="assets/js/vendor/bootstrap.min.js"></script> <!-- Bootstrap -->
+                <script src="assets/js/vendor/jquery.appear.js"></script> <!-- Appear.js -->
+                <script src="assets/js/vendor/jquery.countTo.js"></script> <!-- CountTo.js -->
+                <script src="assets/js/vendor/owl.carousel.min.js"></script> <!-- Owl Carousel -->
+                <script src="assets/js/vendor/bootstrap-datepicker.min.js"></script> <!-- Bootstrap Datepicker -->
+                <script src="assets/js/vendor/validator.min.js"></script> <!-- Validator -->
+                <script src="assets/js/booking.js"></script> <!-- Booking -->
+                <script src="assets/js/main.js"></script> <!-- Main -->
             </div>
         </div>
     </div>
-</div>
-<!-- End Contact Form Area -->
-
-
-
-
-
-
-
-
-
-<!-- Footer -->
-<div class="footer bg-color-1 pad80 text-center">
-    <div class="container">
-        <div class="row mb30">
-            <div class="col-md-12">
-                <div class="footer-logo">
-                    <img src="assets/images/others/ddl.svg" alt="" class="img-center img-responsive">
-                </div>
-            </div>
-        </div>
-        <div class="row mb30">
-            <div class="col-md-5 col-sm-5">
-                <div class="footer-contact text-right">
-                    <h4 style="color: white; font-family: sans-serif;">Call us at: <a href="tel:0473 857 657" style="color: grey; font-family: sans-serif;">0473 857 657</a></h4>
-                    <br>
-                    <h4 style="color: white; font-family: sans-serif;">Email us at: <a href="mailto:watupdiggydog@gmail.com" style="color: grey; font-family: sans-serif;">watupdiggydog@gmail.com</a></h4>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-2">
-                <div class="footer-icon">
-                    <div class="rotate-45deg"><i class="flaticon-scissors-opened-tool"></i></div>
-                </div>
-            </div>
-            <div class="col-md-5 col-sm-5">
-                <div class="footer-contact text-left">
-                    <p>For all your precious pup's pampering needs.</p>
-                    <br>
-                    <ul>
-                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
-                        <li class="active"><a href="termsofservice.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="footer-social">
-                    <ul>
-                        <li><a href="https://www.facebook.com/Watupdiggydogs" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/watupdiggydogs/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Footer -->
-
-<!-- Back to Top Button -->
-<div id="back-to-top"><i class="fa fa-angle-up"></i></div>
-<!-- End Back to Top Button -->
-
-<script>
-    // Auto-scrolling function
-    function autoScroll() {
-        var container = document.querySelector('.gallery-container');
-        var scrollWidth = container.scrollWidth;
-        var clientWidth = container.clientWidth;
-    
-        if (scrollWidth > clientWidth) {
-            var scrollPos = 0; // Initialize scroll position
-    
-            // Scroll function
-            function scroll() {
-                // Increment scroll position
-                scrollPos++;
-    
-                // Check if scroll position reaches the end
-                if (scrollPos >= scrollWidth - clientWidth) {
-                    // Reset scroll position to the beginning
-                    scrollPos = 0;
-                }
-    
-                // Set scroll position
-                container.scrollLeft = scrollPos;
-    
-                // Call scroll function recursively
-                requestAnimationFrame(scroll);
-            }
-    
-            // Start scrolling
-            scroll();
-        }
-    }
-    
-    // Call autoScroll function when the document is ready
-    document.addEventListener('DOMContentLoaded', function() {
-        autoScroll();
-    });
-    
-    </script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    // Smooth scrolling for anchor links
-    $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    });
-</script>
-<!-- JavaScript -->
-<script src="assets/js/vendor/jquery-3.1.1.min.js"></script> <!-- jQuery -->
-<script src="assets/js/vendor/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="assets/js/vendor/jquery.appear.js"></script> <!-- Appear.js -->
-<script src="assets/js/vendor/jquery.countTo.js"></script> <!-- CountTo.js -->
-<script src="assets/js/vendor/owl.carousel.min.js"></script> <!-- Owl Carousel -->
-<script src="assets/js/vendor/bootstrap-datepicker.min.js"></script> <!-- Bootstrap Datepicker -->
-<script src="assets/js/vendor/validator.min.js"></script> <!-- Validator -->
-<script src="assets/js/booking.js"></script> <!-- Booking -->
-<script src="assets/js/main.js"></script> <!-- Main -->
 </body>
+
+</html>
