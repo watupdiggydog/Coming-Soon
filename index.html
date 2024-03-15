@@ -579,6 +579,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
                 </script>
+                
+                <script>
+                    // Auto-scrolling function
+                    function autoScroll() {
+                        var container = document.querySelector('.gallery-container');
+                        var scrollWidth = container.scrollWidth;
+                        var clientWidth = container.clientWidth;
+
+                        if (scrollWidth > clientWidth) {
+                            var scrollPos = 0; // Initialize scroll position
+
+                            // Scroll function
+                            function scroll() {
+                                // Increment scroll position
+                                scrollPos++;
+
+                                // Check if scroll position reaches the end
+                                if (scrollPos >= scrollWidth - clientWidth) {
+                                    // Reset scroll position to the beginning
+                                    scrollPos = 0;
+                                }
+
+                                // Set scroll position
+                                container.scrollLeft = scrollPos;
+
+                                // Call scroll function recursively
+                                requestAnimationFrame(scroll);
+                            }
+
+                            // Start scrolling
+                            scroll();
+                        }
+                    }
+
+                    // Call autoScroll function when the document is ready
+                    document.addEventListener('DOMContentLoaded', function () {
+                        autoScroll();
+                    });
+                </script>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                 <!-- JavaScript -->
                 <script src="assets/js/vendor/jquery-3.1.1.min.js"></script> <!-- jQuery -->
                 <script src="assets/js/vendor/bootstrap.min.js"></script> <!-- Bootstrap -->
