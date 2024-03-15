@@ -117,10 +117,10 @@
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <div class="top-right-contact text-right pull-right hidden-sm hidden-xs"></div>
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#Home">Home</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#booking">Services</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="#Homeanchor">Home</a></li>
+                                    <li><a href="#aboutanchor">About</a></li>
+                                    <li><a href="#bookinganchor">Services</a></li>
+                                    <li><a href="#contactanchor">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -129,7 +129,7 @@
             </div>
         </div>
     </div>
-    <section class="section__container about__container" id="Home"></section>
+    <section class="section__container about__container" id="#Homeanchor"></section>
     <picture>
         <!-- For mobile devices -->
         <source media="(max-width: 760px)" srcset="assets/images/background/mobile-head.avif">
@@ -138,7 +138,7 @@
 
     </picture>
 
-    <section class="section__container about__container" id="about">
+    <section class="section__container about__container" id="aboutanchor">
         <!-- about area start -->
         <div class="about-area bg-color-1 pad120">
             <div class="container">
@@ -263,7 +263,7 @@
         </div>
     </section>
     <!-- hair-style area end -->
-    <section class="section__container contact__container" id="booking"></section>
+    <section class="section__container contact__container" id="bookinganchor"></section>
     <!-- pricing area start -->
     <div class="counter-area bg-color-1 pad50">
         <br>
@@ -426,7 +426,7 @@
 
 
             <!-- Contact Form Area -->
-            <section class="section__container contact__container" id="contact"></section>
+            <section class="section__container contact__container" id="contactanchor"></section>
             <div class="contact-form-area pad60 bg-color-2">
                 <br>
                 <br>
@@ -565,68 +565,17 @@
                 <!-- End Back to Top Button -->
 
                 <script>
-                    // Auto-scrolling function
-                    function autoScroll() {
-                        var container = document.querySelector('.gallery-container');
-                        var scrollWidth = container.scrollWidth;
-                        var clientWidth = container.clientWidth;
+                  // JavaScript is used to prevent the default anchor behavior and implement smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-                        if (scrollWidth > clientWidth) {
-                            var scrollPos = 0; // Initialize scroll position
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
-                            // Scroll function
-                            function scroll() {
-                                // Increment scroll position
-                                scrollPos++;
-
-                                // Check if scroll position reaches the end
-                                if (scrollPos >= scrollWidth - clientWidth) {
-                                    // Reset scroll position to the beginning
-                                    scrollPos = 0;
-                                }
-
-                                // Set scroll position
-                                container.scrollLeft = scrollPos;
-
-                                // Call scroll function recursively
-                                requestAnimationFrame(scroll);
-                            }
-
-                            // Start scrolling
-                            scroll();
-                        }
-                    }
-
-                    // Call autoScroll function when the document is ready
-                    document.addEventListener('DOMContentLoaded', function () {
-                        autoScroll();
-                    });
-                </script>
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                <script>
-                    // Smooth scrolling for anchor links
-                    $(document).ready(function () {
-                        // Add smooth scrolling to all links
-                        $("a").on('click', function (event) {
-                            // Make sure this.hash has a value before overriding default behavior
-                            if (this.hash !== "") {
-                                // Prevent default anchor click behavior
-                                event.preventDefault();
-
-                                // Store hash
-                                var hash = this.hash;
-
-                                // Using jQuery's animate() method to add smooth page scroll
-                                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                                $('html, body').animate({
-                                    scrollTop: $(hash).offset().top
-                                }, 800, function () {
-                                    // Add hash (#) to URL when done scrolling (default click behavior)
-                                    window.location.hash = hash;
-                                });
-                            } // End if
-                        });
-                    });
                 </script>
                 <!-- JavaScript -->
                 <script src="assets/js/vendor/jquery-3.1.1.min.js"></script> <!-- jQuery -->
