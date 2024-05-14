@@ -97,36 +97,38 @@
 
 
     <!-- Header -->
-    <div class="header navbar-fixed-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-14">
-                    <nav class="navbar navbar-default">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a class="navbar-brand" href="index.html"></a>
-                            </div>
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <div class="top-right-contact text-right pull-right hidden-sm hidden-xs"></div>
-                                <ul class="nav navbar-nav">
-                                    <li><a href="#Homeanchor">Home</a></li>
-                                    <li><a href="#aboutanchor">About</a></li>
-                                    <li><a href="#bookinganchor">Services</a></li>
-                                    <li><a href="#contactanchor">Contact</a></li>
-                                </ul>
-                            </div>
+<div class="header navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-14">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand hidden-xs" href="index.html">
+                                <img src="assets/images/background/diggyd.png" alt="Logo" style="height: 10vh; width: 10vh;">
+                            </a>
                         </div>
-                    </nav>
-                </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <div class="top-right-contact text-right pull-right hidden-sm hidden-xs"></div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#Homeanchor">Home</a></li>
+                                <li><a href="#aboutanchor">About</a></li>
+                                <li><a href="#bookinganchor">Services</a></li>
+                                <li><a href="#contactanchor">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </div>
+</div>
 
 
 
@@ -216,12 +218,13 @@
         <!-- hair-style area start -->
         <div class="about-area bg-color-2 pad120">
             <div class="section-title-left" style="text-align: center;">
+                <script src="new.js"></script>
                 <img src="assets/images/title-img/title-img-4.png" class="title-img mb15" alt="">
                 <h3 class="title"><strong>Elevate Your Pup's Style</strong></h3>
                 <p>Bring your dog to us in Arana Hills, QLD, for a stress-free grooming experience! Check out our gallery for a glimpse of the pampering awaiting your pet!</p>
             </div>
 
-            <div class="about-area bg-color-2 pad170">
+            <div class="about-area bg-color-2 pad170" id="hair-style-container">
                 <div class="col-xs-16">
                     <div class="section-title text-center">
                         <div class="gallery-container">
@@ -656,45 +659,6 @@
                                 behavior: 'smooth'
                             });
                         });
-                    });
-                </script>
-
-                <script>
-                    // Auto-scrolling function
-                    function autoScroll() {
-                        var container = document.querySelector('.gallery-container');
-                        var scrollWidth = container.scrollWidth;
-                        var clientWidth = container.clientWidth;
-
-                        if (scrollWidth > clientWidth) {
-                            var scrollPos = 0; // Initialize scroll position
-
-                            // Scroll function
-                            function scroll() {
-                                // Increment scroll position
-                                scrollPos++;
-
-                                // Check if scroll position reaches the end
-                                if (scrollPos >= scrollWidth - clientWidth) {
-                                    // Reset scroll position to the beginning
-                                    scrollPos = 0;
-                                }
-
-                                // Set scroll position
-                                container.scrollLeft = scrollPos;
-
-                                // Call scroll function recursively
-                                requestAnimationFrame(scroll);
-                            }
-
-                            // Start scrolling
-                            scroll();
-                        }
-                    }
-
-                    // Call autoScroll function when the document is ready
-                    document.addEventListener('DOMContentLoaded', function() {
-                        autoScroll();
                     });
                 </script>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
