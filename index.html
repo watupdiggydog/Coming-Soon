@@ -38,58 +38,56 @@
             overflow-x: hidden;
         }
 
-        /* Remove conflicting styles for .gallery-container */
-        @media (max-width: 760px) {
-            .gallery-container {
-                overflow-x: hidden;
-                /* Ensure no horizontal scrolling on small screens */
-            }
-        }
+        body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
-        .gallery-container {
-            white-space: nowrap;
-            /* Ensure images stay in a single line */
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 0;
-            /* Ensure no left padding */
-            width: 100%;
-            /* Take up full width of its container */
-            overflow-x: hidden;
-            /* Allow horizontal scrolling if needed */
-            overflow-y: hidden;
-            /* Hide vertical scrollbar */
-            scrollbar-width: none;
-            /* Hide scrollbar for Firefox */
-            -ms-overflow-style: none;
-            /* Hide scrollbar for IE and Edge */
-        }
+.gallery-container {
+    overflow: hidden;
+    width: 100vw; /* Full width of the viewport */
+    height: 400px; /* Set desired height for the slider */
+    margin: 0 auto;
+    position: relative;
+}
 
-        @media (min-width: 760px) {
-            .image-item {
-                display: inline-block;
-                margin-right: 15px;
-                width: calc(28% - 15px);
-                /* Adjust width to 25% of the container minus margin */
-                height: auto;
-                /* Ensure images maintain aspect ratio */
-            }
-        }
+.slider {
+    display: flex;
+    width: calc(100vw * 16); /* Adjust width based on the number of images */
+    animation: scroll 20s linear infinite; /* Adjust timing for smoother animation */
+}
 
-        .image-item img {
-            width: 100%;
-            height: auto;
-        }
+.image-item {
+    flex: 0 0 25vw; /* Double the width of each image item */
+    height: 100%;
+    box-sizing: border-box;
+}
 
-        @media (max-width: 760px) {
-            .image-item {
-                display: inline-block;
-                margin-right: 15px;
-                width: calc(70% - 15px);
-                /* Adjust width to 25% of the container minus margin */
-                height: auto;
-            }
-        }
+.image-item img {
+    width: auto; /* Change width to auto to maintain aspect ratio */
+    height: 100%;
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    display: block;
+    margin: 0; /* Remove any default margin */
+    padding: 0;
+     /* Remove any default padding */
+}
+
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+    .image-item {
+        flex: 0 0 50vw; /* Double the width of each image item for mobile */
+    }
+}
+
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100vw); }
+}
+
     </style>
 </head>
 
@@ -213,91 +211,40 @@
 
 
 
-
-
-        <!-- hair-style area start -->
-        <div class="about-area bg-color-2 pad120">
-            <div class="section-title-left" style="text-align: center;">
-                <script src="new.js"></script>
-                <img src="assets/images/title-img/title-img-4.png" class="title-img mb15" alt="">
-                <h3 class="title"><strong>Elevate Your Pup's Style</strong></h3>
-                <p>Bring your dog to us in Arana Hills, QLD, for a stress-free grooming experience! Check out our gallery for a glimpse of the pampering awaiting your pet!</p>
-            </div>
-
-            <div class="about-area bg-color-2 pad170" id="hair-style-container">
-                <div class="col-xs-16">
-                    <div class="section-title text-center">
-                        <div class="gallery-container">
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-1.jpg" alt="Image 1">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-2.jpg" alt="Image 2">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-3.jpg" alt="Image 3">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-4.jpg" alt="Image 4">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-5.jpg" alt="Image 5">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-6.jpg" alt="Image 6">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-7.jpg" alt="Image 7">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-8.jpg" alt="Image 8">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-1.jpg" alt="Image 1">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-2.jpg" alt="Image 2">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-3.jpg" alt="Image 3">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-4.jpg" alt="Image 4">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-5.jpg" alt="Image 5">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-6.jpg" alt="Image 6">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-7.jpg" alt="Image 7">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-8.jpg" alt="Image 8">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-1.jpg" alt="Image 1">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-2.jpg" alt="Image 2">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-3.jpg" alt="Image 3">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-4.jpg" alt="Image 4">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-5.jpg" alt="Image 5">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-6.jpg" alt="Image 6">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-7.jpg" alt="Image 7">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-8.jpg" alt="Image 8">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-1.jpg" alt="Image 1">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-2.jpg" alt="Image 2">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-3.jpg" alt="Image 3">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-4.jpg" alt="Image 4">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-5.jpg" alt="Image 5">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-6.jpg" alt="Image 6">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-7.jpg" alt="Image 7">
-                            </div>
-                            <div class="image-item"><img src="assets/images/hair-style/hair-style-8.jpg" alt="Image 8">
-                            </div>
-                        </div>
+<div class="about-area bg-color-2 pad120">
+    <div class="section-title-left" style="text-align: center;">
+        <img src="assets/images/title-img/title-img-4.png" class="title-img mb15" alt="">
+        <h3 class="title"><strong>Elevate Your Pup's Style</strong></h3>
+        <p>Bring your dog to us in Arana Hills, QLD, for a stress-free grooming experience! Check out our gallery for a glimpse of the pampering awaiting your pet!</p>
+    </div>
+    <div class="about-area bg-color-2 pad170">
+        <div class="col-xs-16">
+            <div class="section-title text-center">
+                <div class="gallery-container">
+                    <div class="slider">
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-1.jpg" alt="Image 1"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-2.jpg" alt="Image 2"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-3.jpg" alt="Image 3"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-4.jpg" alt="Image 4"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-5.jpg" alt="Image 5"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-6.jpg" alt="Image 6"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-7.jpg" alt="Image 7"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-8.jpg" alt="Image 8"></div>
+                        <!-- Repeat images for seamless scrolling -->
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-1.jpg" alt="Image 1"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-2.jpg" alt="Image 2"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-3.jpg" alt="Image 3"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-4.jpg" alt="Image 4"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-5.jpg" alt="Image 5"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-6.jpg" alt="Image 6"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-7.jpg" alt="Image 7"></div>
+                        <div class="image-item"><img src="assets/images/hair-style/hair-style-8.jpg" alt="Image 8"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
 
 
 
@@ -515,7 +462,7 @@
                 </div>
                 <!--/.container-->
             </div>
-
+        </section>
 
             <!-- pricing area end -->
 
